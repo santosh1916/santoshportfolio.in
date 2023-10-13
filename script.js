@@ -177,15 +177,16 @@ function mobileScreen(){
         boxShadow:'0px 0px 40px 4px red',
         duration:.3,
         ease: 'elastic.out(1, .3)',
-        onComplete: function(){
-            homepageAnimation();
-        }
+        
 
     },"<")
     .to('#arrow .st0',{
         yPercent: -2000,
         ease: 'back.in(1)',
         duration: .3,
+        onComplete: function(){
+            homepageAnimation();
+        }
     }, "=.5")
     .to('#loder',{
         scaleY: 0,
